@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import {auth, db} from "../config/firebase"
 import { useNavigate } from "react-router-dom";
@@ -38,6 +38,10 @@ const AppContextProvider = (props) => {
             
         }
     }
+
+    useEffect(()=>{
+
+    },[userData])
 
     const value = {
        userData,setUserData,
