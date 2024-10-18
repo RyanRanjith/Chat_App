@@ -21,7 +21,7 @@ const Chat = () => {
     <div className="chat">
      {
       loading
-      ?<p className="loading">Loading...</p>
+      ? <p className="loading">Loading...</p>
       :  <div className="chat-container">
           <LeftSidebar />
           <ChatBox />
